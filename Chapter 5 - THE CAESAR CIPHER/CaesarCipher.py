@@ -14,7 +14,7 @@ if len(sys.argv) < 4:
     sys.exit()
 
 # Setup. SYMBOLS = All supported characters that will be encrypted/decrypted
-SYMBOLS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!?.'
 key = int(sys.argv[-2])
 symbols_length = len(SYMBOLS)
 plaintext = " ".join(sys.argv[1:-2])
