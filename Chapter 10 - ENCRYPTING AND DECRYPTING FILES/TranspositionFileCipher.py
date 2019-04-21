@@ -20,7 +20,7 @@ def main():
     if os.path.exists(outputFilename):
         print("This will overwrite the file %s. (C)ontinue or (Q)uit?" % outputFilename)
         response = input(">")
-        if response.lower().startswith("Q"):
+        if not response.lower().startswith("c"):
             sys.exit()
         
     # Read the message from the input file
